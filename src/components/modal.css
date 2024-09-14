@@ -1,0 +1,38 @@
+.popup{
+    position: fixed;
+    backdrop-filter: blur(10px);
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+.pop{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    border-style:groove;
+    border-color: rgb(216, 134, 33);
+    /* background-color: brown; */
+    background-color: rgb(238, 173, 88);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.butts{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.y{
+    font-size: x-large;
+}
+.n{
+    font-size: x-large;
+}

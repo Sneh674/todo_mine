@@ -1,0 +1,25 @@
+
+  // const handleDelete=(e)=>{
+  //   const iddd=e.target.id
+  //   const updatedTodos2=todos.filter((item)=>{
+  //     item.id!==iddd
+  //   })
+  //   console.log(todos)
+  //   setTodos(updatedTodos2)
+  // }
+
+  // const handleComp=(e)=>{
+  //   let idd=e.target.Id
+  //   if(e.target.isComp==true){
+  //     setTodo(todo+"(completed)")
+  //   }
+  // }
+  // const handleComp = (e) => {
+  //   const id = e.target.id; // Get the ID from the checkbox
+  //   const updatedTodos = todos.map((item) =>
+  //     item.id === id ? item.isComp=!item.isComp : item.isComp=item.isComp
+  //   );
+  
+  //   setTodos(updatedTodos);
+  //   console.log(todos)
+  // };

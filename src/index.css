@@ -1,0 +1,197 @@
+body{
+    background-color: rgb(238, 173, 88);
+}
+.mbox{
+    margin-top: 7vh;
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 30px;
+    width: 65%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inp{
+    justify-content: space-around;
+    margin-bottom: 8vh;
+}
+
+.inptext{
+    width: 20vw;
+    height: 25px;
+    border-radius: 7px;
+    background-color: rgb(250, 204, 135);
+    padding: 2px;
+    padding-left: 10px;
+    transition: transform 0.7s ease;
+}
+
+.inptext:hover{
+    width: 22vw;
+    height: 28px;
+    transform: scale(1.05); /* Slightly scale up on focus */
+    box-shadow: 0 0 20px rgba(192, 147, 44, 0.5); /* Optional shadow */
+    outline: none; /* Remove default focus outline */
+}
+
+.inptext:focus {
+    width: 22vw;
+    height: 28px;
+    transform: scale(1.05); /* Slightly scale up on focus */
+    box-shadow: 0 0 20px rgba(192, 147, 44, 0.5); /* Optional shadow */
+    outline: none; /* Remove default focus outline */
+}
+
+button{
+    background-color: rgb(250, 204, 135);
+    border-radius: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: transform 0.5s ease; /* Smoothly apply transform over 0.5s */
+}
+
+.listBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TODO{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 90%;
+    /* border-style: dotted; */
+}
+
+.checktxt{
+    display: flex;
+    gap: 2vw;
+    /* border-style: dashed; */
+    /* width: 37vw; */
+    width: 70%;
+    word-wrap: break-word;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+}
+
+/* Ensure that the todo text wraps properly */
+.thing {
+    width: 80%;
+    overflow-wrap: break-word;
+    /* border-style: double; */
+}
+
+.edel{
+    display: flex;
+    gap: 3vw;
+}
+
+@media (max-width: 320px) {
+    .checktxt{
+        gap:0.5vw
+    }
+}
+
+@media (max-width: 850px) {
+    .checktxt{
+        gap:1vw
+    }
+}
+
+@media (max-width: 950px) {
+    .inp{
+        justify-content: space-evenly;
+    }
+    .checktxt{
+        width: 35vw;
+    }
+}
+
+@media (max-width: 800px){
+    .mbox{
+        width: 75%;
+    }
+    .listBox{
+        width: 90%;
+    }
+    .checktxt{
+        width: 32vw;
+    }
+
+}
+
+@media (max-width: 700px){
+    .inp{
+        margin-bottom: 5vh;
+    }
+    .mbox{
+        margin-top: 5vh;
+        width: 80%;
+    }
+    .listBox{
+        width: 95%;
+    }
+    .checktxt{
+        width: 37vw;
+    }
+    .TODO{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+@media (max-width: 630px){
+    .mbox{
+        margin-top: 3vh;
+        width: 85%;
+    }
+    .listBox{
+        width: 95%;
+    }
+    .edel{
+        gap: 1vw;
+    }
+    .checktxt{
+        width: 40vw;
+    }
+    .TODO{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+@media (max-width: 480px){
+    .listBox{
+        width: fit-content;
+    }
+    .inp{
+        margin-bottom: 3vh;
+    }
+}
+/* 480 */
+/* 500 for edit/delete */
+
+.save{
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    /* font-size: xx-large; */
+}
+.save button{
+    font-size: large;
+    padding: 8px;
+}
+
+button:hover {
+    background-color: #f0bc61; /* Background color on hover */
+    transform: scale(1.05); /* Slightly increase the size */
+    /* transition-timing-function: ease-in; */
+    box-shadow: 0 0 20px rgba(192, 147, 44, 0.5);
+  }
